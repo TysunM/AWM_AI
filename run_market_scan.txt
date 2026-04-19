@@ -1,0 +1,49 @@
+
+        # 4. DATA PULL
+        start_time = datetime.now(timezone.utc) - timedelta(days=400)
+        request_params = StockBarsRequest(
+            symbol_or_symbols=UNIVERSE,
+            timeframe=TimeFrame.Day,
+            start=start_time
+        )
+        response = data_client.get_stock_bars(request_params)
+
+        # 5. THE EVALUATION LOOP
+        for symbol in UNIVERSE:
+            try:
+                asset_data = response.df.loc[symbol].copy()
+                asset_data['sma_10'] = asset_data['close'].rolling(10).mean()
+                asset_data['sma_50'] = asset_data['close'].rolling(50).mean()
+                asset_data['sma_200'] = asset_data['close'].rolling(200).mean()
+
+                latest = asset_data.iloc[-1]
+                if pd.isna(latest['sma_200']): continue
+
+                macro_bullish = latest['close'] > latest['sma_200']
+                momentum_breakout = latest['sma_10'] > latest['sma_50']
+                in_position = symbol in open_positions
+
+                # --- LOG TO VAULT ---
+                new_signal = Signal(
+                    symbol=symbol,
+                    macro_bullish=bool(macro_bullish),
+                    momentum_breakout=bool(momentum_breakout)
+                )
+                db.add(new_signal)
+                db.commit()
+
+                # --- BUY LOGIC ---
+                if macro_bullish and momentum_breakout and not in_position:
+                    target_price = round(latest['close'] * 0.99, 2)
+                    qty = int(trade_value / target_price)
+                    if qty > 0:
+                        print(f"🎯 [BUY SIGNAL] {symbol}")
+                        # Submit order logic here...
+
+            except Exception as e:
+                print(f"❌ TICKER ERROR [{symbol}]: {e}")
+
+    finally:
+        # 6. Always close the vault, even if the scan crashes
+        db.close()
+        print("Vault Door Secured.")

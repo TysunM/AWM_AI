@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: quant_db
+    restart: always
+    environment:
+      POSTGRES_USER: quant_admin
+      POSTGRES_PASSWORD: DaliOO0369AlcheME1245coFR
+      POSTGRES_DB: alchemical_db
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: quant_cache
+    restart: always
+    ports:
+      - "127.0.0.1:6379:6379"
+    command: redis-server --save 60 1 --loglevel warning
+
+volumes:
+  pgdata:
+    name: quant_db_data

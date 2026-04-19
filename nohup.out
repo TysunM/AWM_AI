@@ -1,0 +1,23 @@
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+/root/alchemical_engine/strategy_apex.py:113: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in U>
+  timestamp=datetime.utcnow()
+  File "/root/alchemical_engine/strategy_apex.py", line 106
+    asset_
+SyntaxError: expected 'except' or 'finally' block

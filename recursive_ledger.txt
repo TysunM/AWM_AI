@@ -1,0 +1,13 @@
+# Add this to your vault.py under the Trade class
+class PerformanceAudit(Base):
+    __tablename__ = "performance_audit"
+    id = Column(Integer, primary_key=True)
+    symbol = Column(String)
+    tech_score = Column(Float)
+    whale_score = Column(Float)
+    fund_score = Column(Float)
+    result = Column(String) # 'WIN' or 'LOSS'
+    pnl_pct = Column(Float)
+    timestamp = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+# Run init_db() after adding this!

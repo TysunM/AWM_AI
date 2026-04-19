@@ -1,0 +1,36 @@
+ 
+
+^@^@^@^@:  i^W^D^@^@ ^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@ J^A^@^@ ^@d^@d^Al^@Z^@d^@d^Bl^Am^BZ^Bm^CZ^Cm^DZ^Dm^EZ^Em^FZ^Fm^GZ^Gm^HZ^H^A^@d^@d^Cl      m
+Z
+m^KZ^K^A^@d^@d^Dl^Lm^LZ^Lm
+Z
+^A^@d^@d^El^Nm^OZ^O^A^@^B^@e^O ^@^@^@^@^@^@^@^A^@d^F^B^@e^@j ^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@d^G ^A^@^@^@^@^@^@ ^@d^H^B^@e^@j ^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@d  ^A^@^@^@^@^@^@ ^@d
+^B^@e^@j ^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@d^K ^A^@^@^@^@^@^@ ^@ ^FZ^Q^B^@e^Be^Q ^A^@^@^@^@^@^@Z^R^B^@e
+d^Ld^Le^R 
+ ^C^@^@^@^@^@^@Z^S^B^@e^K ^@^@^@^@^@^@^@Z^T^B^@G^@d^N ^@d^Oe^T ^C^@^@^@^@^@^@Z^Ud^P ^@Z^Ve^Wd^Qk(^@^@r^H^B^@e^V ^@^@^@^@^@^@^@^A^@y^Ay^A)^R ^@^@^@^@N)^G 
+create_engine ^FColumn ^FString ^EFloat ^HDateTime ^GInteger ^GBoolean)^B ^Lsessionmaker ^Pdeclarative_base)^B ^Hdatetime ^Htimezone)^A ^Kload_dotenvz
+postgresql:// ^GDB_USER ^A: ^GDB_PASSz^P@127.0.0.1:5432/ ^GDB_NAMEF)^C 
+autocommit      autoflush ^Dbindc^@^@^@^@^@^@^@^@^@^@^@^@^E^@^@^@^@^@^@^@  ^@^@^@ ^@e^@Z^Ad^@Z^Bd^AZ^C^B^@e^De^Ed^Bd^B ^C ^C^@^@^@^@^@^@Z^F^B^@e^De^G ^A^@^@^@^@^@^@Z^H^B^@e^De^G ^A^@^@^@^@^@^@Z       ^B^@e^De
+ ^A^@^@^@^@^@^@Z^K^B^@e^De
+d^B ^D ^B^@^@^@^@^@^@Z^L^B^@e^De
+ ^A^@^@^@^@^@^@Z
+^B^@e^De^G ^A^@^@^@^@^@^@Z^N^B^@e^De
+d^E ^F ^B^@^@^@^@^@^@Z^O^B^@e^De^Pd^G ^@ ^F ^B^@^@^@^@^@^@Z^Qy^H)        ^ETrade ^FtradesT)^B ^Kprimary_key ^Eindex)^A ^Hnullableg^@^@^@^@^@^@^@^@)^A ^Gdefaultc^@^@^@^@^@^@^@^@^@^@^@^@^C^@^@^@^C^@^@^@ H^@^@^@>
+^@^@^@ ^Cutc ^@ ^@^@^@^@  /root/alchemical_engine/vault.py ^H<lambda>z^NTrade.<lambda>^X^@^@^@s^S^@^@^@ ^@ ^X ^\ ^\ h l l 1K ^@r!^@^@^@N)^R ^H__name__ 
+__module__ ^L__qualname__ 
+__tablename__r^D^@^@^@r^H^@^@^@ ^Bidr^E^@^@^@ ^Fsymbol ^Hstrategyr^F^@^@^@ ^Kentry_price 
+exit_price ^Hquantity ^Fstatus ^Cpnlr^G^@^@^@   timestampr ^@^@^@r!^@^@^@r"^@^@^@r^W^@^@^@r^W^@^@^@^N^@^@^@sg^@^@^@ ^@ ^T^\ M   ^O ^G T ^T      6 B 
+^S F ^ F ^O^U f ~ H ^R^X ^U - K ^Q^W ^E ^D ^Q- J ^O^U e } H 
+^S F ^ F 
+^P ^U ^C 
+$ C ^P^V x )K ^PL Ir!^@^@^@r^W^@^@^@c^@^@^@^@^@^@^@^@^@^@^@^@^C^@^@^@^C^@^@^@ b^@^@^@ ^@t^@^@^@^@^@^@^@^@^@j^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@j^E^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@t^F^@^@^@^@^@^@^@^@ ^A >
+create_all ^Fengine ^Eprintr ^@^@^@r!^@^@^@r"^@^@^@ ^Ginit_dbr7^@^@^@^Z^@^@^@s ^@^@^@ ^@ ^D^H M M ^D^\ ^D^\ & ^D^\ ^D) ^D        
+1 ^D2r!^@^@^@ ^H__main__)^X ^Bos 
+sqlalchemyr^C^@^@^@r^D^@^@^@r^E^@^@^@r^F^@^@^@r^G^@^@^@r^H^@^@^@r       ^@^@^@ ^Nsqlalchemy.ormr
+^@^@^@r^K^@^@^@r^L^@^@^@r
+^@^@^@ ^Fdotenvr^N^@^@^@ ^Fgetenv ^FDB_URLr5^@^@^@ ^LSessionLocalr2^@^@^@r^W^@^@^@r7^@^@^@r$^@^@^@r ^@^@^@r!^@^@^@r"^@^@^@ ^H<module>r@^@^@^@^A^@^@^@s ^@^@^@ ^C^A^A^A ^@        ^@W ^@W ^@W ^@9 ^@' ^@^^ ^@^K 
+ ^K^X ^Y ^R ^Y ^Y 9 ^Y- ^X. a    ^B              ) 0D /E EU V_ VX V_ V_ `i Vj Uk        l ^F    ^V v    ^^ ^F ^O^[ u ^E F ^OK ^L ^G^W ^G^Y ^D ^D
+^AM^A D ^@
+^AM^A ^X^B^A3 ^H^@^D^L z ^C^Y ^D^K I ^C^@^D^Zr!^@^@^@
+
+
